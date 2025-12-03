@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Сервис кондиционеров в Дубае | Cool Air Dubai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Профессиональный сервис кондиционеров в Дубае. Диагностика 200 AED, глубокая чистка 750 AED, ремонт, установка умных термостатов Google Nest 4-го поколения и Ecobee под ключ. Русскоязычная команда." />
+  <meta name="keywords" content="кондиционер дубай, сервис кондиционеров дубай, чистка кондиционера дубай, ремонт кондиционера дубай, google nest дубай, ecobee дубай, умный термостат дубай, установка термостата дубай" />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, system-ui, Arial, sans-serif;
+      background: #f5f7fb;
+      color: #111827;
+    }
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #22c1c3);
+      color: white;
+      padding: 30px 20px 40px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero-text {
+      flex: 1 1 320px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .btn {
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-primary {
+      background: #fbbf24;
+      color: #1f2937;
+      font-weight: 600;
+    }
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+    .hero-side {
+      flex: 1 1 260px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 16px 18px;
+      font-size: 14px;
+    }
+    main {
+      padding: 30px 0 50px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .section {
+      margin-bottom: 32px;
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 18px rgba(15,23,42,0.08);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+    }
+    .service-card {
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      padding: 14px 14px 16px;
+    }
+    .service-card h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+    .price {
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #1d4ed8;
+    }
+    .service-card ul {
+      margin: 6px 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: #4b5563;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+    .chip {
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #1d4ed8;
+    }
+    ol {
+      padding-left: 18px;
+      margin: 6px 0 0;
+      font-size: 14px;
+    }
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 18px 15px 26px;
+      font-size: 13px;
+      color: #6b7280;
+      background: #f9fafb;
+    }
+    .contacts {
+      display: grid;
+      gap: 6px;
+      font-size: 14px;
+    }
+    .contacts a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    /* Блок с термостатами */
+    .thermostats-hero {
+      max-width: 720px;
+      width: 100%;
+      display: block;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      box-shadow: 0 10px 26px rgba(15,23,42,0.15);
+    }
+    .thermostat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 8px;
+    }
+    .thermostat-card {
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      padding: 14px 14px 16px;
+      background: #f9fafb;
+    }
+    .thermostat-card h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+    .thermostat-card ul {
+      margin: 6px 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: #4b5563;
+    }
+    .thermostat-tagline {
+      font-size: 14px;
+      color: #374151;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 26px;
+      }
+      header {
+        padding-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container hero">
+    <div class="hero-text">
+      <div class="badge">Сервис кондиционеров в Дубае • Русскоязычная команда</div>
+      <h1>Диагностика, чистка и умное управление кондиционерами в Дубае</h1>
+      <p>Приезжаем в любой район Дубая, аккуратная работа, понятные цены. Устанавливаем и настраиваем умные термостаты Google Nest 4-го поколения и Ecobee — экономия на охлаждении до 20–25% и комфортный климат дома.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+971567077067">📞 Позвонить: +971 56 707 7067</a>
+        <a class="btn btn-outline" href="https://wa.me/971567077067" target="_blank">WhatsApp консультация</a>
+      </div>
+      <div style="margin-top:10px;font-size:13px;opacity:0.9;">
+        Работаем ежедневно • Выезд по записи
+      </div>
+    </div>
+    <div class="hero-side">
+      <strong>Специальное предложение:</strong>
+      <ul style="margin-top:8px;padding-left:18px;">
+        <li>Диагностика — 200 AED (если делаете работы — входит в стоимость)</li>
+        <li>Глубокая чистка — 750 AED за юнит</li>
+        <li>Установка умного термостата (Google Nest 4-го поколения или Ecobee) под ключ — от 2350 AED за термостат</li>
+      </ul>
+      <p style="margin-top:10px;">Оставьте заявку — мастер свяжется с вами, задаст пару уточняющих вопросов и подберёт решение.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="section">
+      <h2>Услуги и цены</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Диагностика кондиционера</h3>
+          <div class="price">200 AED за выезд</div>
+          <p style="font-size:13px;">Если вы решаете делать ремонт или чистку — диагностика засчитывается в стоимость работ.</p>
+          <ul>
+            <li>Проверка работы системы</li>
+            <li>Поиск причины: не охлаждает, шумит, течёт, пахнет</li>
+            <li>Консультация по дальнейшим шагам</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Глубокая чистка кондиционера</h3>
+          <div class="price">750 AED за 1 юнит</div>
+          <ul>
+            <li>Разборка внутреннего блока</li>
+            <li>Мойка теплообменника и дренажа</li>
+            <li>Удаление грязи, плесени, запахов</li>
+            <li>Дезинфекция и обработка от бактерий</li>
+          </ul>
+          <div class="chips">
+            <div class="chip">Рекомендуется 1–2 раза в год</div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Ремонт: моторы, актуаторы</h3>
+          <div class="price">от 560 AED</div>
+          <ul>
+            <li>Замена актуатора — 560 AED/юнит</li>
+            <li>Замена двигателя — 850 AED/юнит</li>
+            <li>Оригинальные или рекомендованные аналоги</li>
+            <li>Проверка работы после установки</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Установка умного термостата под ключ</h3>
+          <div class="price">от 2350 AED за термостат</div>
+          <ul>
+            <li>Google Nest 4-го поколения или Ecobee (по согласованию)</li>
+            <li>Реле, диодные мосты и комплектующие для систем AC в Дубае</li>
+            <li>Подключение к существующей системе кондиционирования</li>
+            <li>Настройка сценариев и обучение пользованию</li>
+          </ul>
+          <div class="chips">
+            <div class="chip">Экономия до 20–25% на охлаждении</div>
+            <div class="chip">Управление с телефона</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Варианты умных термостатов</h2>
+
+      <!-- Картинка с двумя термостатами. Файл thermostats.png должен лежать рядом с HTML -->
+      <img src="thermostats.png" alt="Google Nest 4-го поколения и Ecobee Smart Thermostat" class="thermostats-hero" />
+
+      <p class="thermostat-tagline">
+        Мы работаем с двумя основными моделями умных термостатов, которые хорошо подходят под системы кондиционирования в Дубае.
+        Поможем выбрать оптимальный вариант под вашу квартиру или виллу.
+      </p>
+
+      <div class="thermostat-grid">
+        <div class="thermostat-card">
+          <h3>Google Nest 4-го поколения</h3>
+          <div class="price">Популярен в Дубае</div>
+          <ul>
+            <li>Круглый алюминиевый термостат с ярким дисплеем.</li>
+            <li>Обучается вашим привычкам: сам подстраивает температуру по времени и присутствию.</li>
+            <li>Управление через приложение Google Home с телефона или планшета.</li>
+            <li>Хорошо работает с большинством центральных систем AC и термостатов в популярных домах Дубая.</li>
+            <li>Помогает снизить расход DEWA на охлаждение до 20–25% при правильной настройке.</li>
+          </ul>
+        </div>
+
+        <div class="thermostat-card">
+          <h3>Ecobee Smart Thermostat</h3>
+          <div class="price">Умный контроль по комнатам</div>
+          <ul>
+            <li>Плоский чёрный термостат с сенсорным экраном.</li>
+            <li>Поддержка дополнительных беспроводных датчиков по комнатам.</li>
+            <li>Точное поддержание климата в зонах, где вы реально находитесь.</li>
+            <li>Управление через приложение Ecobee, интеграция с Alexa, Apple Home и др.</li>
+            <li>Подходит для сложных планировок и больших апартаментов/вилл.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Почему выбирают нас</h2>
+      <ul>
+        <li><strong>Русскоязычные специалисты</strong> с опытом работы в Дубае.</li>
+        <li><strong>Работа по правилам ОАЭ</strong>: аккуратно, чисто, с уважением к дому и соседям.</li>
+        <li><strong>Прозрачные цены</strong> — все суммы озвучиваются до начала работ.</li>
+        <li><strong>Честная диагностика</strong> — предлагаем только то, что реально нужно сделать.</li>
+        <li><strong>Гарантия на работу</strong> — если что-то не так, приезжаем и устраняем.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Как мы работаем</h2>
+      <ol>
+        <li><strong>Заявка</strong> — вы пишете в WhatsApp или звоните.</li>
+        <li><strong>Диагностика</strong> — мастер приезжает, проверяет систему.</li>
+        <li><strong>Согласование</strong> — вы получаете варианты решения и точную стоимость.</li>
+        <li><strong>Выполнение работ</strong> — чистка, ремонт или установка умного термостата.</li>
+        <li><strong>Сдача и оплата</strong> — вы принимаете работу и оплачиваете.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Контакты и заявка</h2>
+      <div class="contacts">
+        <div><strong>Телефон (звонок / WhatsApp):</strong> <a href="tel:+971567077067">+971 56 707 7067</a></div>
+        <div><strong>Telegram:</strong> <a href="https://t.me/cool_air_dubai" target="_blank">@cool_air_dubai</a></div>
+        <div><strong>Город:</strong> Дубай, выезд по всему городу и ближайшим районам</div>
+      </div>
+      <p style="margin-top:10px;font-size:14px;">Напишите удобное время визита и район — мы предложим ближайшее окно для выезда мастера.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Cool Air Dubai. Сервис кондиционеров и установка умных термостатов в Дубае.
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>
